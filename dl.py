@@ -1,14 +1,8 @@
-# Requirements:
-#   youtube-dl
-#   aria2c
-#   ffmpeg
-
-
+from pathlib import Path
 import subprocess
 import logging
 import sys
 import os
-from pathlib import Path
 
 
 def main():
