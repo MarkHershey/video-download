@@ -1,39 +1,45 @@
-# Convenient Script to Download Video with Best Quality from URL
+# Convenient Script to Download Video from URL with Default Settings
 
 ### Dependencies
 - [youtube-dl](https://github.com/ytdl-org/youtube-dl)
 - [aria2c](https://aria2.github.io/)
 - [FFmpeg](https://ffmpeg.org/)
 
-
-### How to Install Dependencies
+Refer to their respective official installation guides.
 
 ##### For macOS user:
 
 Use the following commands in Terminal:
+
 - `brew install youtube-dl`
 - `brew aria2`
 - `brew ffmpeg`
 
-##### For other OS user:
 
-Refer to their respective official installation guides.
+
+
+### Default Settings
+
+- Default to download the `best video-only file` and the `best audio-only file`, then merge them into `mp4` using `FFmpeg`
+- Default to name video file as `<Video Title>_<Resolution>.<Extension>`
+- Default to save file into system download folder under current user's home directory.
+- If the script cannot find the system download folder, file will be saved into `Downloads` folder under current working directory.
 
 
 ### Usage
 
-
+Use without aria2:
 ```
-# without using aria2
 python3 dl.py <URL of Video>
 ```
 or
+
+Use aria2 to download:
 ```
-# use aria2 to download
 python3 dl.py <URL of Video> <Number of Threads for aria2>
 ```
 
-Example:
+Example Usage:
 ```
 python3 dl.py https://www.youtube.com/watch\?v\=F4a4X8iYOgQ 8
 ```
