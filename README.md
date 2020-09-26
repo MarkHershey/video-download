@@ -12,8 +12,8 @@ Refer to their respective official installation guides.
 Use the following commands in Terminal:
 
 - `brew install youtube-dl`
-- `brew aria2`
-- `brew ffmpeg`
+- `brew install aria2`
+- `brew install ffmpeg`
 
 
 
